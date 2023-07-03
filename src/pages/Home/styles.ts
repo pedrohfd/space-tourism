@@ -58,11 +58,9 @@ export const Body = styled.p`
 
 export const ExploreButton = styled(Link)`
   @media (min-width: 1200px) {
-    h4 {
-      color: ${colors.black};
-      font-size: 2rem;
-      letter-spacing: 0.125rem;
-    }
+    color: ${colors.black};
+    font-size: 2rem;
+    letter-spacing: 0.125rem;
 
     min-width: 274px;
     min-height: 274px;

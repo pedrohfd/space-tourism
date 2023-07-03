@@ -17,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Bellefair', serif;
   }
 
-  h5, span {
+  h5, span, a {
     font-family: 'Barlow Condensed', sans-serif;
   }
 

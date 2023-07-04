@@ -9,6 +9,8 @@ import {
   DestinyButton,
   DestinyName,
   Body,
+  Divider,
+  DistanceArea,
 } from './styles'
 import Moon from '../../assets/destination/image-moon.webp'
 import Mars from '../../assets/destination/image-mars.webp'
@@ -74,6 +76,21 @@ export const Destination = () => {
           <DestinyName>{destination.name.toUpperCase()}</DestinyName>
 
           <Body>{destination.description}</Body>
+
+          <Divider />
+
+          <DistanceArea>
+            <div>
+              <h5>AVG. DISTANCE</h5>
+
+              <h4>{destination.distance.toUpperCase()}</h4>
+            </div>
+            <div>
+              <h5>EST. TRAVEL TIME</h5>
+
+              <h4>{destination.travel.toUpperCase()}</h4>
+            </div>
+          </DistanceArea>
         </RightContent>
       </Content>
     </Container>

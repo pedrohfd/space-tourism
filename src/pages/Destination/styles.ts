@@ -65,6 +65,8 @@ export const DestinyButtonArea = styled.div`
     display: flex;
     gap: 2rem;
     height: 2rem;
+
+    margin-bottom: 2rem;
   }
 `
 
@@ -92,5 +94,38 @@ export const Body = styled.p`
     color: ${colors.blue};
     font-size: 1.125rem;
     line-height: 2rem;
+    margin-top: 0.8rem;
+  }
+`
+
+export const Divider = styled.div`
+  @media (min-width: 1200px) {
+    width: 100%;
+    height: 0.06rem;
+    background: #383b4b;
+    margin-top: 3.3rem;
+  }
+`
+
+export const DistanceArea = styled.div`
+  @media (min-width: 1200px) {
+    display: flex;
+    margin-top: 1.75rem;
+
+    div + div {
+      margin-left: 5rem;
+    }
+
+    h4 {
+      color: ${colors.white};
+      font-size: 1.75rem;
+    }
+
+    h5 {
+      color: ${colors.blue};
+      font-size: 1.025rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.14rem;
+    }
   }
 `

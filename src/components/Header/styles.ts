@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { colors } from '../../styles/colors'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export const Container = styled.header`
   display: flex;
@@ -51,7 +51,7 @@ export const Blur = styled.nav`
       margin-left: 7.5rem;
     }
 
-    width: 81rem;
+    width: 100vw;
     height: 6rem;
 
     background: rgba(255, 255, 255, 0.04);
@@ -59,7 +59,7 @@ export const Blur = styled.nav`
   }
 `
 
-export const Button = styled(Link)`
+export const Button = styled(NavLink)`
   @media (min-width: 1200px) {
     color: ${colors.white};
     text-decoration: none;
@@ -77,8 +77,12 @@ export const Button = styled(Link)`
 
     transition: border-color 0.2s;
 
-    &:hover {
+    &.active {
       border-color: ${colors.white};
+    }
+
+    &:hover {
+      border-color: ${colors.white}80;
     }
   }
 `

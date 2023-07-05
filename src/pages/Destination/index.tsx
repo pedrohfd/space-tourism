@@ -1,6 +1,6 @@
 import {
   DestinationContainer,
-  Content,
+  DestinationContent,
   LeftContent,
   Destiny,
   RightContent,
@@ -49,7 +49,7 @@ export const Destination = () => {
 
   return (
     <DestinationContainer>
-      <Content>
+      <DestinationContent>
         <LeftContent>
           <Title>
             <strong>01</strong> PICK YOUR DESTINATION
@@ -104,7 +104,7 @@ export const Destination = () => {
             </div>
           </DistanceArea>
         </RightContent>
-      </Content>
+      </DestinationContent>
     </DestinationContainer>
   )
 }

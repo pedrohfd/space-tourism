@@ -22,7 +22,7 @@ export const HomeContainer = styled.div`
   }
 `
 
-export const Content = styled.div`
+export const HomeContent = styled.div`
   @media (min-width: 1200px) {
     display: flex;
 

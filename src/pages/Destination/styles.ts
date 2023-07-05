@@ -22,7 +22,7 @@ export const DestinationContainer = styled.div`
   }
 `
 
-export const Content = styled.div`
+export const DestinationContent = styled.div`
   display: flex;
   justify-content: space-between;
 `

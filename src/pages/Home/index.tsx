@@ -1,7 +1,7 @@
 import {
   Body,
   HomeContainer,
-  Content,
+  HomeContent,
   ExploreButton,
   SubTitle,
   Title,
@@ -10,7 +10,7 @@ import {
 export const Home = () => {
   return (
     <HomeContainer>
-      <Content>
+      <HomeContent>
         <div>
           <SubTitle>SO, YOU WANT TO TRAVEL TO</SubTitle>
           <Title>SPACE</Title>
@@ -25,7 +25,7 @@ export const Home = () => {
         <ExploreButton to='/destination'>
           <h4>EXPLORE</h4>
         </ExploreButton>
-      </Content>
+      </HomeContent>
     </HomeContainer>
   )
 }

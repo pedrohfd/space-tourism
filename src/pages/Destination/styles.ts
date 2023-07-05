@@ -70,14 +70,29 @@ export const DestinyButtonArea = styled.div`
   }
 `
 
-export const DestinyButton = styled.button`
+interface ButtonProps {
+  isActive: boolean
+}
+
+export const DestinyButton = styled.button<ButtonProps>`
   @media (min-width: 1200px) {
     font-size: 1.125rem;
     font-family: 'Barlow Condensed', sans-serif;
     color: ${colors.blue};
     background: transparent;
     border: 0;
+    outline: none;
     letter-spacing: 0.16rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.187rem solid
+      ${(props) => (props.isActive ? ` ${colors.white}` : 'transparent')};
+
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: ${(props) =>
+        props.isActive ? `${colors.white}` : `${colors.white}80`};
+    }
   }
 `
 

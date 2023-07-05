@@ -59,16 +59,28 @@ export const Destination = () => {
         </LeftContent>
         <RightContent>
           <DestinyButtonArea>
-            <DestinyButton onClick={() => handleDestiny('moon')}>
+            <DestinyButton
+              isActive={destination.name.toLowerCase() === 'moon'}
+              onClick={() => handleDestiny('moon')}
+            >
               MOON
             </DestinyButton>
-            <DestinyButton onClick={() => handleDestiny('mars')}>
+            <DestinyButton
+              isActive={destination.name.toLowerCase() === 'mars'}
+              onClick={() => handleDestiny('mars')}
+            >
               MARS
             </DestinyButton>
-            <DestinyButton onClick={() => handleDestiny('europa')}>
+            <DestinyButton
+              isActive={destination.name.toLowerCase() === 'europa'}
+              onClick={() => handleDestiny('europa')}
+            >
               EUROPA
             </DestinyButton>
-            <DestinyButton onClick={() => handleDestiny('titan')}>
+            <DestinyButton
+              isActive={destination.name.toLowerCase() === 'titan'}
+              onClick={() => handleDestiny('titan')}
+            >
               TITAN
             </DestinyButton>
           </DestinyButtonArea>

@@ -5,7 +5,7 @@ import bgMobile from '../../assets/home/background-home-mobile.jpg'
 import { colors } from '../../styles/colors'
 import { Link } from 'react-router-dom'
 
-export const Container = styled.div`
+export const HomeContainer = styled.div`
   height: 100vh;
 
   @media (min-width: 1200px) {

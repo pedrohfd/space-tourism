@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles/colors'
 import { NavLink } from 'react-router-dom'
 
-export const Container = styled.header`
+export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   position: absolute;

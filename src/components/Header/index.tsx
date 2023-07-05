@@ -1,9 +1,9 @@
-import { Blur, Button, Container, Line, Logo } from './styles'
+import { Blur, Button, HeaderContainer, Line, Logo } from './styles'
 import logo from '../../assets/shared/logo.svg'
 
 export const Header = () => {
   return (
-    <Container>
+    <HeaderContainer>
       <Logo src={logo} />
 
       <Line />
@@ -32,6 +32,6 @@ export const Header = () => {
           </li>
         </ul>
       </Blur>
-    </Container>
+    </HeaderContainer>
   )
 }

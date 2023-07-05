@@ -5,7 +5,7 @@ import bgTablet from '../../assets/destination/background-destination-tablet.jpg
 import bgMobile from '../../assets/destination/background-destination-mobile.jpg'
 import { colors } from '../../styles/colors'
 
-export const Container = styled.div`
+export const DestinationContainer = styled.div`
   height: 100vh;
 
   @media (min-width: 1200px) {

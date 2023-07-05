@@ -1,5 +1,5 @@
 import {
-  Container,
+  DestinationContainer,
   Content,
   LeftContent,
   Destiny,
@@ -48,7 +48,7 @@ export const Destination = () => {
   }
 
   return (
-    <Container>
+    <DestinationContainer>
       <Content>
         <LeftContent>
           <Title>
@@ -105,6 +105,6 @@ export const Destination = () => {
           </DistanceArea>
         </RightContent>
       </Content>
-    </Container>
+    </DestinationContainer>
   )
 }

@@ -1,6 +1,6 @@
 import {
   Body,
-  Container,
+  HomeContainer,
   Content,
   ExploreButton,
   SubTitle,
@@ -9,7 +9,7 @@ import {
 
 export const Home = () => {
   return (
-    <Container>
+    <HomeContainer>
       <Content>
         <div>
           <SubTitle>SO, YOU WANT TO TRAVEL TO</SubTitle>
@@ -26,6 +26,6 @@ export const Home = () => {
           <h4>EXPLORE</h4>
         </ExploreButton>
       </Content>
-    </Container>
+    </HomeContainer>
   )
 }

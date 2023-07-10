@@ -14,7 +14,6 @@ export const CrewContainer = styled.div`
 
   @media (min-width: 1200px) {
     background: url(${bgDesktop}) no-repeat center center/cover;
-    /* padding: 16.3rem 10rem 10.5rem 10rem; */
   }
 
   @media (min-width: 400px) and (max-width: 1199px) {

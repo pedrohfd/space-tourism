@@ -11,24 +11,16 @@ export const Header = () => {
       <Blur>
         <ul>
           <li>
-            <Button to='/'>
-              <strong>00</strong> HOME
-            </Button>
+            <Button to='/'>HOME</Button>
           </li>
           <li>
-            <Button to='/destination'>
-              <strong>01</strong> DESTINATION
-            </Button>
+            <Button to='/destination'>DESTINATION</Button>
           </li>
           <li>
-            <Button to='/crew'>
-              <strong>02</strong> CREW
-            </Button>
+            <Button to='/crew'>CREW</Button>
           </li>
           <li>
-            <Button to='/technology'>
-              <strong>03</strong> TECHNOLOGY
-            </Button>
+            <Button to='/technology'>TECHNOLOGY</Button>
           </li>
         </ul>
       </Blur>

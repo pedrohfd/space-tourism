@@ -10,6 +10,12 @@ export const HeaderContainer = styled.header`
   @media (min-width: 1200px) {
     padding: 4rem 0 0 3.44rem;
   }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    padding-left: 2.5rem;
+    justify-content: space-between;
+    width: 100vw;
+  }
 `
 
 export const Logo = styled.img`
@@ -49,9 +55,27 @@ export const Blur = styled.nav`
       height: 100%;
       align-items: center;
       margin-left: 7.5rem;
+      counter-reset: item;
     }
 
     width: 100vw;
+    height: 6rem;
+
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+  }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    ul {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+      height: 100%;
+      align-items: center;
+      margin: 0 3rem;
+    }
+
     height: 6rem;
 
     background: rgba(255, 255, 255, 0.04);
@@ -71,19 +95,41 @@ export const Button = styled(NavLink)`
 
     padding: 2.05rem 0;
 
-    strong {
+    transition: border-color 0.2s;
+
+    &::before {
+      content: counter(item, decimal-leading-zero);
+      counter-increment: item;
       font-weight: 700;
       margin-right: 0.6rem;
     }
-
-    transition: border-color 0.2s;
 
     &.active {
       border-color: ${colors.white};
     }
 
     &:hover {
+      &.active {
+        border-color: ${colors.white};
+      }
       border-color: ${colors.white}80;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    color: ${colors.white};
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+
+    border-bottom: 0.2rem solid transparent;
+
+    padding: 2.22rem 0;
+
+    transition: border-color 0.2s;
+
+    &.active {
+      border-color: ${colors.white};
     }
   }
 `

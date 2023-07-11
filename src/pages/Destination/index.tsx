@@ -55,7 +55,7 @@ export const Destination = () => {
             <strong>01</strong> PICK YOUR DESTINATION
           </Title>
 
-          <Destiny src={image} />
+          <Destiny src={image} alt={destination.name} />
         </LeftContent>
         <RightContent>
           <DestinyButtonArea>

@@ -84,7 +84,7 @@ export const Crew = () => {
           </CrewButtonArea>
         </LeftContent>
         <RightContent name={crew.name}>
-          <CrewMember src={image} />
+          <CrewMember src={image} alt={crew.name} />
         </RightContent>
       </CrewContent>
     </CrewContainer>

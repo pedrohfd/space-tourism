@@ -15,6 +15,7 @@ export const HomeContainer = styled.div`
 
   @media (min-width: 400px) and (max-width: 1199px) {
     background: url(${bgTablet}) no-repeat center center/cover;
+    padding-top: 12.5rem;
   }
 
   @media (max-width: 399px) {
@@ -29,12 +30,23 @@ export const HomeContent = styled.div`
     align-items: flex-end;
     justify-content: space-between;
   }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    text-align: center;
+  }
 `
 
 export const Title = styled.h1`
   @media (min-width: 1200px) {
     font-size: 9.375rem;
     color: ${colors.white};
+    margin: 1.5rem 0;
+  }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    font-size: 9.375rem;
+    color: ${colors.white};
+    line-height: 9.375rem;
     margin: 1.5rem 0;
   }
 `
@@ -45,6 +57,12 @@ export const SubTitle = styled.h5`
     color: ${colors.blue};
     letter-spacing: 0.29531rem;
   }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    color: ${colors.blue};
+    font-size: 1.25rem;
+    letter-spacing: 0.21094rem;
+  }
 `
 
 export const Body = styled.p`
@@ -54,22 +72,30 @@ export const Body = styled.p`
     color: ${colors.blue};
     width: 27.75rem;
   }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    display: inline-block;
+    width: 27.75rem;
+    color: ${colors.blue};
+    line-height: 1.75rem;
+  }
 `
 
 export const ExploreButton = styled(Link)`
   @media (min-width: 1200px) {
     color: ${colors.black};
+    font-family: 'Bellefair', serif;
     font-size: 2rem;
     letter-spacing: 0.125rem;
 
-    min-width: 274px;
-    min-height: 274px;
+    min-width: 17.125rem;
+    min-height: 17.125rem;
 
     display: flex;
 
     background: ${colors.white};
-    width: 274px;
-    height: 274px;
+    width: 17.125rem;
+    height: 17.125rem;
 
     text-decoration: none;
     justify-content: center;
@@ -82,5 +108,29 @@ export const ExploreButton = styled(Link)`
     &:hover {
       outline: 5.5rem solid ${colors.white}1A;
     }
+  }
+
+  @media (min-width: 400px) and (max-width: 1199px) {
+    color: ${colors.black};
+    font-size: 2rem;
+    font-family: 'Bellefair', serif;
+    letter-spacing: 0.125rem;
+
+    min-width: 15.125rem;
+    min-height: 15.125rem;
+
+    display: inline-flex;
+
+    background: ${colors.white};
+    width: 15.125rem;
+    height: 15.125rem;
+
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    margin-top: 9.75rem;
   }
 `

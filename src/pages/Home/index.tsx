@@ -22,9 +22,7 @@ export const Home = () => {
           </Body>
         </div>
 
-        <ExploreButton to='/destination'>
-          <h4>EXPLORE</h4>
-        </ExploreButton>
+        <ExploreButton to='/destination'>EXPLORE</ExploreButton>
       </HomeContent>
     </HomeContainer>
   )

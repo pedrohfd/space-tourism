@@ -4,7 +4,7 @@ import logo from '../../assets/shared/logo.svg'
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Logo src={logo} />
+      <Logo src={logo} alt='Logo da aplicação' />
 
       <Line />
 

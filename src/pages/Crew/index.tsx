@@ -61,6 +61,8 @@ export const Crew = () => {
 
           <Body name={crew.name}>{crew.bio}</Body>
 
+          <div />
+
           <CrewButtonArea>
             <CrewButton
               isActive={crew.name === 'Douglas Hurley'}

@@ -8,17 +8,17 @@ import { colors } from '../../styles/colors'
 export const DestinationContainer = styled.div`
   height: 100vh;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     background: url(${bgDesktop}) no-repeat center center/cover;
     padding: 16.3rem 10.1rem 10.5rem 10.1rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     background: url(${bgTablet}) no-repeat center center/cover;
     padding-top: 8.5rem;
   }
 
-  @media (max-width: 399px) {
+  @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
   }
 `
@@ -27,13 +27,13 @@ export const DestinationContent = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     flex-direction: column;
   }
 `
 
 export const LeftContent = styled.div`
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
 
     h5 {
@@ -43,7 +43,7 @@ export const LeftContent = styled.div`
 `
 
 export const Title = styled.h5`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.white};
     font-size: 1.75rem;
 
@@ -58,7 +58,7 @@ export const Title = styled.h5`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     font-size: 1.25rem;
     letter-spacing: 0.21rem;
@@ -75,30 +75,30 @@ export const Title = styled.h5`
 `
 
 export const Destiny = styled.img`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     margin-left: 3rem;
     width: 27.8rem;
     height: 27.8rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     width: 19rem;
     height: 19rem;
   }
 `
 
 export const RightContent = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     padding-top: 4rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
   }
 `
 
 export const DestinyButtonArea = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     display: flex;
     gap: 2rem;
     height: 2rem;
@@ -106,7 +106,7 @@ export const DestinyButtonArea = styled.div`
     margin-bottom: 2rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-flex;
     gap: 2rem;
     height: 2rem;
@@ -121,7 +121,7 @@ interface ButtonProps {
 }
 
 export const DestinyButton = styled.button<ButtonProps>`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     font-size: 1.125rem;
     font-family: 'Barlow Condensed', sans-serif;
     color: ${colors.blue};
@@ -141,7 +141,7 @@ export const DestinyButton = styled.button<ButtonProps>`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 1.125rem;
     font-family: 'Barlow Condensed', sans-serif;
     color: ${colors.blue};
@@ -158,19 +158,19 @@ export const DestinyButton = styled.button<ButtonProps>`
 `
 
 export const DestinyName = styled.h1`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.white};
     font-size: 6.25rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     font-size: 5rem;
   }
 `
 
 export const Body = styled.p`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     width: 27.75rem;
     color: ${colors.blue};
     font-size: 1.125rem;
@@ -178,7 +178,7 @@ export const Body = styled.p`
     margin-top: 0.8rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-block;
     width: 35.8rem;
     color: ${colors.blue};
@@ -189,13 +189,13 @@ export const Body = styled.p`
 `
 
 export const Divider = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     height: 0.06rem;
     background: #383b4b;
     margin-top: 3.3rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     height: 0.06rem;
     background: #383b4b;
     margin: 3.06rem 6rem 0;
@@ -203,7 +203,7 @@ export const Divider = styled.div`
 `
 
 export const DistanceArea = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     display: flex;
     margin-top: 1.75rem;
 
@@ -224,7 +224,7 @@ export const DistanceArea = styled.div`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-flex;
     margin-top: 1.75rem;
 

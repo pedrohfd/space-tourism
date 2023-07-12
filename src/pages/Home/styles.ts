@@ -8,42 +8,42 @@ import { Link } from 'react-router-dom'
 export const HomeContainer = styled.div`
   height: 100vh;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     background: url(${bgDesktop}) no-repeat center center/cover;
     padding: 24rem 10.31rem 8.19rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     background: url(${bgTablet}) no-repeat center center/cover;
     padding-top: 12.5rem;
   }
 
-  @media (max-width: 399px) {
+  @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
   }
 `
 
 export const HomeContent = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     display: flex;
 
     align-items: flex-end;
     justify-content: space-between;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
   }
 `
 
 export const Title = styled.h1`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     font-size: 9.375rem;
     color: ${colors.white};
     margin: 1.5rem 0;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     font-size: 9.375rem;
     color: ${colors.white};
     line-height: 9.375rem;
@@ -52,13 +52,13 @@ export const Title = styled.h1`
 `
 
 export const SubTitle = styled.h5`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     font-size: 1.75rem;
     color: ${colors.blue};
     letter-spacing: 0.29531rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.blue};
     font-size: 1.25rem;
     letter-spacing: 0.21094rem;
@@ -66,14 +66,14 @@ export const SubTitle = styled.h5`
 `
 
 export const Body = styled.p`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     font-size: 1.125rem;
     line-height: 2rem;
     color: ${colors.blue};
     width: 27.75rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-block;
     width: 27.75rem;
     color: ${colors.blue};
@@ -82,7 +82,7 @@ export const Body = styled.p`
 `
 
 export const ExploreButton = styled(Link)`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.black};
     font-family: 'Bellefair', serif;
     font-size: 2rem;
@@ -110,7 +110,7 @@ export const ExploreButton = styled(Link)`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.black};
     font-size: 2rem;
     font-family: 'Bellefair', serif;

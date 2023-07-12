@@ -7,11 +7,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   position: absolute;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     padding: 4rem 0 0 3.44rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     padding-left: 2.5rem;
     justify-content: space-between;
     width: 100vw;
@@ -29,7 +29,7 @@ export const Logo = styled.img`
 `
 
 export const Line = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     position: relative;
 
     margin-right: 1rem;
@@ -47,7 +47,7 @@ export const Line = styled.div`
 `
 
 export const Blur = styled.nav`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     ul {
       display: flex;
       gap: 3rem;
@@ -66,7 +66,7 @@ export const Blur = styled.nav`
     -webkit-backdrop-filter: blur(40px);
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     ul {
       display: flex;
       gap: 3rem;
@@ -85,7 +85,7 @@ export const Blur = styled.nav`
 `
 
 export const Button = styled(NavLink)`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.white};
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;
@@ -116,7 +116,7 @@ export const Button = styled(NavLink)`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     text-decoration: none;
     font-family: 'Barlow Condensed', sans-serif;

@@ -8,16 +8,16 @@ import { colors } from '../../styles/colors'
 export const TechnologyContainer = styled.div`
   height: 100vh;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     background: url(${bgDesktop}) no-repeat center center/cover;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     background: url(${bgTablet}) no-repeat center center/cover;
     padding-top: 8.5rem;
   }
 
-  @media (max-width: 399px) {
+  @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
   }
 `
@@ -25,7 +25,7 @@ export const TechnologyContainer = styled.div`
 export const TechnologyContent = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     padding: 16.3rem 0rem 10.5rem 10rem;
 
     div.flex {
@@ -35,13 +35,13 @@ export const TechnologyContent = styled.div`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     flex-direction: column;
   }
 `
 
 export const LeftContent = styled.div`
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
 
     h5 {
@@ -51,13 +51,13 @@ export const LeftContent = styled.div`
 `
 
 export const RightContent = styled.div`
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
   }
 `
 
 export const Informative = styled.h5`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.white};
     font-size: 1.75rem;
 
@@ -70,7 +70,7 @@ export const Informative = styled.h5`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     font-size: 1.25rem;
     letter-spacing: 0.21rem;
@@ -87,13 +87,13 @@ export const Informative = styled.h5`
 `
 
 export const TechnologyButtonArea = styled.div`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     display: flex;
     flex-direction: column;
     margin-right: 5rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     margin: 2.75rem 0;
   }
 `
@@ -103,7 +103,7 @@ interface TechnologyButtonProps {
 }
 
 export const TechnologyButton = styled.button<TechnologyButtonProps>`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     background: ${(props) => (props.isActive ? colors.white : 'transparent')};
     border: 1px solid ${colors.white}40;
     border-radius: 50%;
@@ -125,7 +125,7 @@ export const TechnologyButton = styled.button<TechnologyButtonProps>`
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     background: ${(props) => (props.isActive ? colors.white : 'transparent')};
     border: 1px solid ${colors.white}40;
     border-radius: 50%;
@@ -144,7 +144,7 @@ export const TechnologyButton = styled.button<TechnologyButtonProps>`
 `
 
 export const Title = styled.h1`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     font-size: 3.5rem;
     text-transform: uppercase;
     color: ${colors.white};
@@ -152,7 +152,7 @@ export const Title = styled.h1`
     margin-top: 0.69rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -161,13 +161,13 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h5`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.blue};
     font-size: 1.25rem;
     letter-spacing: 0.16875rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-block;
     color: ${colors.blue};
     font-size: 1rem;
@@ -176,7 +176,7 @@ export const Subtitle = styled.h5`
 `
 
 export const Description = styled.p`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     color: ${colors.blue};
     font-size: 1.25rem;
     line-height: 2rem;
@@ -185,7 +185,7 @@ export const Description = styled.p`
     margin-top: 1rem;
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     display: inline-block;
     width: 35.8rem;
     color: ${colors.blue};
@@ -194,13 +194,13 @@ export const Description = styled.p`
 `
 
 export const TechnologyImage = styled.img`
-  @media (min-width: 1200px) {
+  @media (min-width: 1008px) {
     &.landscape {
       display: none;
     }
   }
 
-  @media (min-width: 400px) and (max-width: 1199px) {
+  @media (min-width: 641px) and (max-width: 1007px) {
     &.portrait {
       display: none;
     }

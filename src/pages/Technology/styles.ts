@@ -107,6 +107,7 @@ export const TechnologyButton = styled.button<TechnologyButtonProps>`
     background: ${(props) => (props.isActive ? colors.white : 'transparent')};
     border: 1px solid ${colors.white}40;
     border-radius: 50%;
+    padding-top: 0.4rem;
     width: 5rem;
     height: 5rem;
     color: ${(props) => (props.isActive ? colors.black : colors.white)};

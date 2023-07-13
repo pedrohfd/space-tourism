@@ -10,12 +10,13 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body {
     overflow-x: hidden;
-    overscroll-behavior-y: contain;
   }
 
   body {
     height: 100vh;
     position: relative;
+    overscroll-behavior-y: none;
+
   }
 
   h1, h2, h3, h4, h6 {

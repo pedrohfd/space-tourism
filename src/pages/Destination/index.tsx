@@ -51,7 +51,7 @@ export const Destination = () => {
   return (
     <DestinationContainer>
       <ScrollArea.Root>
-        <ScrollArea.Viewport>
+        <ScrollArea.Viewport style={{ marginBottom: 1000 }}>
           <DestinationContent>
             <LeftContent>
               <Title>

@@ -6,7 +6,6 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   position: absolute;
-  overflow-y: hidden;
 
   @media (min-width: 1008px) {
     padding: 4rem 0 0 3.44rem;

@@ -34,6 +34,7 @@ export const DestinationContent = styled.div`
 
   @media (max-width: 640px) {
     overflow-x: hidden;
+    overscroll-behavior-y: contain;
     -webkit-overflow-scrolling: touch;
 
     height: 100vh;
@@ -41,7 +42,7 @@ export const DestinationContent = styled.div`
     align-items: center;
     text-align: center;
 
-    padding: 5.5rem 1.5rem 0;
+    padding: 5.5rem 1.5rem 5rem;
   }
 `
 

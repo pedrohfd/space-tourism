@@ -18,6 +18,7 @@ import Europa from '../../assets/destination/image-europa.webp'
 import Titan from '../../assets/destination/image-titan.webp'
 import { useState } from 'react'
 import data from '../../data.json'
+import * as ScrollArea from '@radix-ui/react-scroll-area'
 
 export const Destination = () => {
   const [destination, setDestination] = useState(data.destinations[0])
@@ -49,62 +50,67 @@ export const Destination = () => {
 
   return (
     <DestinationContainer>
-      <DestinationContent>
-        <LeftContent>
-          <Title>
-            <strong>01</strong> PICK YOUR DESTINATION
-          </Title>
+      <ScrollArea.Root>
+        <ScrollArea.Viewport>
+          <DestinationContent>
+            <LeftContent>
+              <Title>
+                <strong>01</strong> PICK YOUR DESTINATION
+              </Title>
 
-          <Destiny src={image} alt={destination.name} />
-        </LeftContent>
-        <RightContent>
-          <DestinyButtonArea>
-            <DestinyButton
-              isActive={destination.name.toLowerCase() === 'moon'}
-              onClick={() => handleDestiny('moon')}
-            >
-              MOON
-            </DestinyButton>
-            <DestinyButton
-              isActive={destination.name.toLowerCase() === 'mars'}
-              onClick={() => handleDestiny('mars')}
-            >
-              MARS
-            </DestinyButton>
-            <DestinyButton
-              isActive={destination.name.toLowerCase() === 'europa'}
-              onClick={() => handleDestiny('europa')}
-            >
-              EUROPA
-            </DestinyButton>
-            <DestinyButton
-              isActive={destination.name.toLowerCase() === 'titan'}
-              onClick={() => handleDestiny('titan')}
-            >
-              TITAN
-            </DestinyButton>
-          </DestinyButtonArea>
+              <Destiny src={image} alt={destination.name} />
+            </LeftContent>
+            <RightContent>
+              <DestinyButtonArea>
+                <DestinyButton
+                  isActive={destination.name.toLowerCase() === 'moon'}
+                  onClick={() => handleDestiny('moon')}
+                >
+                  MOON
+                </DestinyButton>
+                <DestinyButton
+                  isActive={destination.name.toLowerCase() === 'mars'}
+                  onClick={() => handleDestiny('mars')}
+                >
+                  MARS
+                </DestinyButton>
+                <DestinyButton
+                  isActive={destination.name.toLowerCase() === 'europa'}
+                  onClick={() => handleDestiny('europa')}
+                >
+                  EUROPA
+                </DestinyButton>
+                <DestinyButton
+                  isActive={destination.name.toLowerCase() === 'titan'}
+                  onClick={() => handleDestiny('titan')}
+                >
+                  TITAN
+                </DestinyButton>
+              </DestinyButtonArea>
 
-          <DestinyName>{destination.name.toUpperCase()}</DestinyName>
+              <DestinyName>{destination.name.toUpperCase()}</DestinyName>
 
-          <Body>{destination.description}</Body>
+              <Body>{destination.description}</Body>
 
-          <Divider />
+              <Divider />
 
-          <DistanceArea>
-            <div>
-              <h5>AVG. DISTANCE</h5>
+              <DistanceArea>
+                <div>
+                  <h5>AVG. DISTANCE</h5>
 
-              <h4>{destination.distance.toUpperCase()}</h4>
-            </div>
-            <div>
-              <h5>EST. TRAVEL TIME</h5>
+                  <h4>{destination.distance.toUpperCase()}</h4>
+                </div>
+                <div>
+                  <h5>EST. TRAVEL TIME</h5>
 
-              <h4>{destination.travel.toUpperCase()}</h4>
-            </div>
-          </DistanceArea>
-        </RightContent>
-      </DestinationContent>
+                  <h4>{destination.travel.toUpperCase()}</h4>
+                </div>
+              </DistanceArea>
+            </RightContent>
+          </DestinationContent>
+          <ScrollArea.Scrollbar orientation='vertical' />
+        </ScrollArea.Viewport>
+      </ScrollArea.Root>
     </DestinationContainer>
   )
 }

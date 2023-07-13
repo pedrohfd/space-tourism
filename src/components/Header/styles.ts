@@ -116,6 +116,7 @@ export const Blur = styled.nav<HamburgerProps>`
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
 
     ul {
       display: flex;

@@ -20,6 +20,7 @@ export const HomeContainer = styled.div`
 
   @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
+    padding: 7rem 1.5rem 0;
   }
 `
 
@@ -33,6 +34,15 @@ export const HomeContent = styled.div`
 
   @media (min-width: 641px) and (max-width: 1007px) {
     text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 `
 
@@ -49,6 +59,13 @@ export const Title = styled.h1`
     line-height: 9.375rem;
     margin: 1.5rem 0;
   }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 5rem;
+    line-height: 6.25rem;
+    margin: 1rem 0;
+  }
 `
 
 export const SubTitle = styled.h5`
@@ -62,6 +79,12 @@ export const SubTitle = styled.h5`
     color: ${colors.blue};
     font-size: 1.25rem;
     letter-spacing: 0.21094rem;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.blue};
+    font-size: 1rem;
+    letter-spacing: 0.16875rem;
   }
 `
 
@@ -78,6 +101,12 @@ export const Body = styled.p`
     width: 27.75rem;
     color: ${colors.blue};
     line-height: 1.75rem;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.blue};
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
   }
 `
 
@@ -132,5 +161,29 @@ export const ExploreButton = styled(Link)`
     border-radius: 50%;
 
     margin-top: 9.75rem;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.black};
+    font-size: 1.25rem;
+    font-family: 'Bellefair', serif;
+    letter-spacing: 0.125rem;
+
+    min-width: 9.375rem;
+    min-height: 9.375rem;
+
+    display: inline-flex;
+
+    background: ${colors.white};
+    width: 9.375rem;
+    height: 9.375rem;
+
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    margin-bottom: 3rem;
   }
 `

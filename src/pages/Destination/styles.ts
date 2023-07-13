@@ -22,7 +22,6 @@ export const DestinationContainer = styled.div`
 
   @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
-    overscroll-behavior-y: contain;
   }
 `
 

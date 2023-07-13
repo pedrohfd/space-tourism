@@ -30,6 +30,14 @@ export const DestinationContent = styled.div`
   @media (min-width: 641px) and (max-width: 1007px) {
     flex-direction: column;
   }
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 5.5rem 1.5rem 0;
+  }
 `
 
 export const LeftContent = styled.div`
@@ -72,6 +80,20 @@ export const Title = styled.h5`
       margin-right: 1.1rem;
     }
   }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 1rem;
+    letter-spacing: 0.16875rem;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+
+    strong {
+      opacity: 0.25;
+      font-weight: 700;
+      margin-right: 0.5rem;
+    }
+  }
 `
 
 export const Destiny = styled.img`
@@ -84,6 +106,11 @@ export const Destiny = styled.img`
   @media (min-width: 641px) and (max-width: 1007px) {
     width: 19rem;
     height: 19rem;
+  }
+
+  @media (max-width: 640px) {
+    width: 12rem;
+    height: 12rem;
   }
 `
 
@@ -113,6 +140,15 @@ export const DestinyButtonArea = styled.div`
 
     margin-top: 3.5rem;
     margin-bottom: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    display: inline-flex;
+    gap: 1.5rem;
+    height: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
   }
 `
 
@@ -155,6 +191,21 @@ export const DestinyButton = styled.button<ButtonProps>`
 
     transition: border-color 0.2s;
   }
+
+  @media (max-width: 640px) {
+    font-size: 1.125rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: ${colors.blue};
+    background: transparent;
+    border: 0;
+    outline: none;
+    letter-spacing: 0.16rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.187rem solid
+      ${(props) => (props.isActive ? ` ${colors.white}` : 'transparent')};
+
+    transition: border-color 0.2s;
+  }
 `
 
 export const DestinyName = styled.h1`
@@ -166,6 +217,11 @@ export const DestinyName = styled.h1`
   @media (min-width: 641px) and (max-width: 1007px) {
     color: ${colors.white};
     font-size: 5rem;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 3.5rem;
   }
 `
 
@@ -186,19 +242,30 @@ export const Body = styled.p`
     line-height: 2rem;
     margin-top: 0.5rem;
   }
+
+  @media (max-width: 640px) {
+    height: 7rem;
+    color: ${colors.blue};
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
 `
 
 export const Divider = styled.div`
+  background: #383b4b;
   @media (min-width: 1008px) {
     height: 0.06rem;
-    background: #383b4b;
     margin-top: 3.3rem;
   }
 
   @media (min-width: 641px) and (max-width: 1007px) {
     height: 0.06rem;
-    background: #383b4b;
     margin: 3.06rem 6rem 0;
+  }
+
+  @media (max-width: 640px) {
+    height: 0.06rem;
+    margin: 2rem 0 0;
   }
 `
 
@@ -235,6 +302,23 @@ export const DistanceArea = styled.div`
     h4 {
       color: ${colors.white};
       font-size: 1.75rem;
+    }
+
+    h5 {
+      color: ${colors.blue};
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.14rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 2rem;
+
+    h4 {
+      color: ${colors.white};
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
     }
 
     h5 {

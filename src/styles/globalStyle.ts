@@ -14,9 +14,6 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     position: relative;
-    height: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
   }
 
   h1, h2, h3, h4, h6 {

@@ -37,12 +37,7 @@ export const HomeContent = styled.div`
   }
 
   @media (max-width: 640px) {
-    height: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
   }
 `
 
@@ -184,6 +179,6 @@ export const ExploreButton = styled(Link)`
 
     border-radius: 50%;
 
-    margin-bottom: 3rem;
+    margin-top: 5rem;
   }
 `

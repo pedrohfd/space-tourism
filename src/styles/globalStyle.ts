@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     height: 100vh;
+    overflow-y: initial;
     position: relative;
   }
 

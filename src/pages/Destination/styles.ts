@@ -7,7 +7,7 @@ import { colors } from '../../styles/colors'
 
 export const DestinationContainer = styled.div`
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
   @media (min-width: 1008px) {
     background: url(${bgDesktop}) no-repeat center center/cover;
@@ -22,6 +22,7 @@ export const DestinationContainer = styled.div`
 
   @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
+    overflow-y: auto;
   }
 `
 

@@ -47,6 +47,8 @@ export const Destination = () => {
     }
   }
 
+  window.scrollTo(0, 1)
+
   return (
     <DestinationContainer>
       <DestinationContent>

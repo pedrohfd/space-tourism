@@ -168,7 +168,7 @@ export const Hamburger = styled.label`
 
     .line {
       fill: none;
-      stroke: white;
+      stroke: ${colors.blue};
       stroke-linecap: round;
       stroke-linejoin: round;
       stroke-width: 3;

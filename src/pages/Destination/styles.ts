@@ -35,9 +35,8 @@ export const DestinationContent = styled.div`
   @media (max-width: 640px) {
     overflow-x: hidden;
     overscroll-behavior-y: contain;
-    overflow-clip-margin: content-box 5rem;
+    height: 100%;
 
-    height: 100vh;
     flex-direction: column;
     align-items: center;
     text-align: center;

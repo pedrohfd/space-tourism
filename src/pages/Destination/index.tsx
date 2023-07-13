@@ -47,7 +47,7 @@ export const Destination = () => {
     }
   }
 
-  window.scrollTo(0, 1)
+  console.log(window.innerHeight)
 
   return (
     <DestinationContainer>

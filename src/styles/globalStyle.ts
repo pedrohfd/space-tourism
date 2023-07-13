@@ -8,9 +8,13 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
   }
 
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     height: 100vh;
-    overflow-x: hidden;
+    position: relative;
   }
 
   h1, h2, h3, h4, h6 {

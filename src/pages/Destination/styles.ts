@@ -22,6 +22,7 @@ export const DestinationContainer = styled.div`
 
   @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
+    overflow-anchor: none;
   }
 `
 
@@ -40,7 +41,6 @@ export const DestinationContent = styled.div`
 
     padding: 5.5rem 1.5rem 0;
 
-    overflow-y: scroll;
     overscroll-behavior-y: contain;
   }
 `

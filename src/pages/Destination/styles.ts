@@ -35,14 +35,14 @@ export const DestinationContent = styled.div`
   @media (max-width: 640px) {
     overflow-x: hidden;
     overscroll-behavior-y: contain;
-    -webkit-overflow-scrolling: touch;
+    overflow-clip-margin: 0 10rem;
 
     height: 100vh;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    padding: 5.5rem 1.5rem 5rem;
+    padding: 5.5rem 1.5rem 0;
   }
 `
 

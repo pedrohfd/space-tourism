@@ -41,6 +41,10 @@ export const DestinationContent = styled.div`
     text-align: center;
 
     padding: 5.5rem 1.5rem 0;
+
+    @media (max-height: 800px) {
+      margin-bottom: 10rem;
+    }
   }
 `
 

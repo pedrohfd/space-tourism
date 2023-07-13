@@ -34,9 +34,9 @@ export const DestinationContent = styled.div`
 
   @media (max-width: 640px) {
     overflow-x: hidden;
-    overflow-y: scroll;
-    overscroll-behavior-y: contain;
-    scroll-padding-bottom: 5rem;
+    /* overscroll-behavior-y: contain; */
+    scroll-padding-bottom: 10rem;
+    /* scroll */
     height: 100%;
 
     flex-direction: column;

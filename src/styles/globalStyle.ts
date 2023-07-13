@@ -15,8 +15,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     height: 100vh;
     position: relative;
-    overscroll-behavior-y: none;
-
   }
 
   h1, h2, h3, h4, h6 {

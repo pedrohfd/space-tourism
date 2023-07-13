@@ -21,8 +21,6 @@ export const DestinationContainer = styled.div`
 
   @media (max-width: 640px) {
     background: url(${bgMobile}) no-repeat center center/cover;
-    overflow-y: auto;
-    overscroll-behavior-y: auto;
   }
 `
 
@@ -35,6 +33,9 @@ export const DestinationContent = styled.div`
   }
 
   @media (max-width: 640px) {
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+
     height: 100vh;
     flex-direction: column;
     align-items: center;

@@ -14,8 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     height: 100vh;
-    overflow-y: hidden;
-    position: relative;
+    /* position: relative; */
   }
 
   h1, h2, h3, h4, h6 {

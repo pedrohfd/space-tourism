@@ -10,7 +10,6 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body {
     overflow-x: hidden;
-    overflow-y: visible;
   }
 
   body {

@@ -2,7 +2,11 @@ import styled, { css, keyframes } from 'styled-components'
 import { colors } from '../../styles/colors'
 import { NavLink } from 'react-router-dom'
 
-export const HeaderContainer = styled.header`
+interface HamburgerProps {
+  isOpen: boolean
+}
+
+export const HeaderContainer = styled.header<HamburgerProps>`
   display: flex;
   align-items: center;
   position: absolute;
@@ -21,6 +25,15 @@ export const HeaderContainer = styled.header`
     width: 100vw;
     justify-content: space-between;
     padding: 1.5rem 1.5rem 0 1.5rem;
+
+    div {
+      display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+      position: absolute;
+      height: 100vh;
+      width: 10rem;
+      left: 0;
+      top: 0;
+    }
   }
 `
 
@@ -73,10 +86,6 @@ const slideOut = keyframes`
     transform: translateX(100%);
   }
 `
-
-interface HamburgerProps {
-  isOpen: boolean
-}
 
 export const Blur = styled.nav<HamburgerProps>`
   @media (min-width: 1008px) {

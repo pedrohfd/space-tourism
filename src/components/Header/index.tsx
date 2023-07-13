@@ -10,7 +10,7 @@ export const Header = () => {
   }
 
   return (
-    <HeaderContainer>
+    <HeaderContainer isOpen={isMenuOpen}>
       <Logo src={logo} alt='Logo da aplicação' />
 
       <Line />
@@ -25,6 +25,8 @@ export const Header = () => {
           <path className='line' d='M7 16 27 16'></path>
         </svg>
       </Hamburger>
+
+      <div onClick={() => setIsMenuOpen(false)} />
 
       <Blur isOpen={isMenuOpen}>
         <ul>

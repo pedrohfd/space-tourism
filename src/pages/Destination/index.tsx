@@ -18,7 +18,6 @@ import Europa from '../../assets/destination/image-europa.webp'
 import Titan from '../../assets/destination/image-titan.webp'
 import { useState } from 'react'
 import data from '../../data.json'
-import * as ScrollArea from '@radix-ui/react-scroll-area'
 
 export const Destination = () => {
   const [destination, setDestination] = useState(data.destinations[0])
@@ -50,8 +49,6 @@ export const Destination = () => {
 
   return (
     <DestinationContainer>
-      {/* <ScrollArea.Root> */}
-      {/* <ScrollArea.Viewport> */}
       <DestinationContent>
         <LeftContent>
           <Title>
@@ -108,9 +105,6 @@ export const Destination = () => {
           </DistanceArea>
         </RightContent>
       </DestinationContent>
-      {/* <ScrollArea.Scrollbar orientation='vertical' /> */}
-      {/* </ScrollArea.Viewport> */}
-      {/* </ScrollArea.Root> */}
     </DestinationContainer>
   )
 }

@@ -34,13 +34,9 @@ export const DestinationContent = styled.div`
   }
 
   @media (max-width: 640px) {
-    overflow-x: hidden;
-    /* overscroll-behavior-y: contain; */
-    /* scroll-padding-bottom: 10rem; */
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
-    scroll-margin-bottom: 10rem;
-    height: 100%;
+    overflow-y: scroll;
+    overscroll-behavior-y: auto;
+    height: 100vh;
 
     flex-direction: column;
     align-items: center;

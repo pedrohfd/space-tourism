@@ -11,6 +11,7 @@ import {
   CrewMember,
   CrewButton,
   CrewButtonArea,
+  Divider,
 } from './styles'
 import ansari from '../../assets/crew/image-anousheh-ansari.webp'
 import douglas from '../../assets/crew/image-douglas-hurley.webp'
@@ -55,6 +56,32 @@ export const Crew = () => {
             <strong>02</strong> MEET YOUR CREW
           </Informative>
 
+          <CrewMember src={image} alt={crew.name} className='mobile' />
+
+          <Divider />
+
+          <CrewButtonArea className='mobile'>
+            <CrewButton
+              isActive={crew.name === 'Douglas Hurley'}
+              onClick={() => handleCrew('douglas')}
+            />
+
+            <CrewButton
+              isActive={crew.name === 'Mark Shuttleworth'}
+              onClick={() => handleCrew('mark')}
+            />
+
+            <CrewButton
+              isActive={crew.name === 'Victor Glover'}
+              onClick={() => handleCrew('victor')}
+            />
+
+            <CrewButton
+              isActive={crew.name === 'Anousheh Ansari'}
+              onClick={() => handleCrew('ansari')}
+            />
+          </CrewButtonArea>
+
           <Role>{crew.role}</Role>
 
           <Name>{crew.name}</Name>
@@ -63,7 +90,7 @@ export const Crew = () => {
 
           <div />
 
-          <CrewButtonArea>
+          <CrewButtonArea className='desktop'>
             <CrewButton
               isActive={crew.name === 'Douglas Hurley'}
               onClick={() => handleCrew('douglas')}
@@ -86,7 +113,7 @@ export const Crew = () => {
           </CrewButtonArea>
         </LeftContent>
         <RightContent name={crew.name}>
-          <CrewMember src={image} alt={crew.name} />
+          <CrewMember src={image} alt={crew.name} className='desktop' />
         </RightContent>
       </CrewContent>
     </CrewContainer>

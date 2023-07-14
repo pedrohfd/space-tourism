@@ -33,6 +33,11 @@ export const CrewContent = styled.div`
   @media (min-width: 641px) and (max-width: 1007px) {
     flex-direction: column;
   }
+
+  @media (max-width: 640px) {
+    text-align: center;
+    padding: 5.5rem 1.5rem 0;
+  }
 `
 
 export const LeftContent = styled.div`
@@ -90,6 +95,20 @@ export const Informative = styled.h5`
       margin-right: 1rem;
     }
   }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 1rem;
+    letter-spacing: 0.16rem;
+
+    margin-bottom: 3rem;
+
+    strong {
+      opacity: 0.25;
+      font-weight: 700;
+      margin-right: 1rem;
+    }
+  }
 `
 
 export const Name = styled.h1`
@@ -103,6 +122,14 @@ export const Name = styled.h1`
     color: ${colors.white};
     font-size: 2.5rem;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    margin-top: 0.5rem;
   }
 `
 
@@ -121,6 +148,15 @@ export const Role = styled.h2`
     text-transform: uppercase;
     opacity: 0.5;
     margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 640px) {
+    color: ${colors.white};
+    font-size: 1rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+
+    margin-top: 2rem;
   }
 `
 
@@ -142,6 +178,13 @@ export const Body = styled.p<CrewProps>`
     line-height: 1.75rem;
     margin-top: 1rem;
   }
+
+  @media (max-width: 640px) {
+    color: ${colors.blue};
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    margin-top: 1rem;
+  }
 `
 
 export const CrewButtonArea = styled.div`
@@ -150,6 +193,10 @@ export const CrewButtonArea = styled.div`
     display: flex;
     justify-content: space-between;
     width: 9rem;
+
+    &.mobile {
+      display: none;
+    }
   }
 
   @media (min-width: 641px) and (max-width: 1007px) {
@@ -157,6 +204,21 @@ export const CrewButtonArea = styled.div`
     display: inline-flex;
     justify-content: space-between;
     width: 5.5rem;
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    margin-top: 2rem;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 5.5rem;
+
+    &.desktop {
+      display: none;
+    }
   }
 `
 
@@ -192,10 +254,52 @@ export const CrewButton = styled.button<CrewButtonProps>`
 
     transition: opacity 0.2s;
   }
+
+  @media (max-width: 640px) {
+    height: 0.625rem;
+    width: 0.625rem;
+    border-radius: 50%;
+    border: 0;
+    background: ${colors.white};
+    opacity: ${(props) => (props.isActive ? '1' : '0.17')};
+    cursor: pointer;
+
+    transition: opacity 0.2s;
+  }
 `
 
 export const CrewMember = styled.img`
   @media (min-width: 641px) and (max-width: 1007px) {
     margin-top: 2.5rem;
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    &.desktop {
+      display: none;
+    }
+
+    &.mobile {
+      height: 13.875rem;
+    }
+  }
+`
+
+export const Divider = styled.div`
+  @media (min-width: 1008px) {
+    display: none;
+  }
+
+  @media (min-width: 641px) and (max-width: 1007px) {
+    display: none;
+  }
+
+  @media (max-width: 640px) {
+    height: 0.0625rem;
+    background: #383b4b;
+    margin-top: -0.25rem;
   }
 `

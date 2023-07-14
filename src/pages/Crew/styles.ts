@@ -269,6 +269,12 @@ export const CrewButton = styled.button<CrewButtonProps>`
 `
 
 export const CrewMember = styled.img`
+  @media (min-width: 1008px) {
+    &.mobile {
+      display: none;
+    }
+  }
+
   @media (min-width: 641px) and (max-width: 1007px) {
     margin-top: 2.5rem;
 

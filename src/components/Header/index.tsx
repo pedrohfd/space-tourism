@@ -16,7 +16,11 @@ export const Header = () => {
       <Line />
 
       <Hamburger>
-        <input type='checkbox' onClick={handleToggleHamburger} />
+        <input
+          type='checkbox'
+          onClick={handleToggleHamburger}
+          checked={isMenuOpen}
+        />
         <svg viewBox='0 0 32 32'>
           <path
             className='line line-top-bottom'
